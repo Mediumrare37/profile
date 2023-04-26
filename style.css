@@ -4,6 +4,11 @@ img {
   border-radius: 50%;
 }
 
+img-2 {
+  height: 65px;
+  width: 65px;
+}
+
 button {
   background-color: #4CAF50;
   border: none;
@@ -20,15 +25,17 @@ button:hover{
 }
 
 body {
-  background-color: #576CBC ;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
   line-height: normal;
   text-align: center;
 }
 
-paragraph {
+p {
   text-align: center;
+  margin: 0;
 }
 h1, h2, h3, h4, h5 {
   color: #0B2447;
@@ -36,20 +43,44 @@ h1, h2, h3, h4, h5 {
   font-size: large;
   line-height: normal;
   text-align: center;
+  margin: 0;
 }
 
 .container {
   text-justify: auto;
   width: 500px;
   margin: 0 auto;
+  scroll-behavior: smooth;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 .card {
   background: scroll;
   background-color: #A5D7E8;
-  border: #576CBC;
+  border: #0B2447 solid 30px;
   border-radius: 5px;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  margin-bottom: 8px;
+  padding: 39px;
+}
+
+@media (max-width: 1664px) {
+  .container{
+    width: 1300px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .container{
+    width: 1100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container{
+    width: 900px;
+  }
 }
 
 @media (max-width: 960px) {
